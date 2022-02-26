@@ -8,10 +8,12 @@ namespace BinarySearchTree
 {
     class BinarySearchTree<T> where T : IComparable
     {
+        //Variables
         public T data;
         public BinarySearchTree<T> left;
         public BinarySearchTree<T> right;
 
+        //Creating constructor of class to initialize 
         public BinarySearchTree(T Data)
         {
             this.data = Data;
@@ -19,6 +21,7 @@ namespace BinarySearchTree
             right = null;
         }
 
+        //Creating method to insert  items
         public void Insert(T item)
         {
             if (this.data.CompareTo(item) > 0)
@@ -37,6 +40,7 @@ namespace BinarySearchTree
 
         }
 
+        //Creating method to display the nodes
         public void Display()
         {
            
