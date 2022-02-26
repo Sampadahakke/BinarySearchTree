@@ -24,8 +24,12 @@ namespace BinarySearchTree
             binarySearch.Insert(16);
             binarySearch.Insert(63);
             binarySearch.Insert(67);
-            Console.WriteLine("Nodes in Binary search tree = ");
+            Console.Write("Items in Binary search tree = ");
             binarySearch.Display();
+            Console.WriteLine();    
+            Console.WriteLine("\xAIs 16 present in tree ? ");
+            Console.WriteLine("Searching for item.....");
+            Console.WriteLine("Answer = " + binarySearch.Search(16));
             Console.ReadKey();
         }
     }
